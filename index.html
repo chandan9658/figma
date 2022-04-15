@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zetgo page</title>
+</head>
+<style>
+    .z{
+        font-size: 53px;
+        font-weight:bolder;
+        font-style:unset;
+        color:#004871;
+        display: inline-block;
+            }
+    .zetgo{
+        font-size: 50px;
+        font-weight:bolder;
+        font-style:unset;
+        color:#004871;
+        padding-left:40px;
+        display: inline-block;
+    }
+    .zet{
+        font-size:45px;
+        font-weight: bolder;
+    }
+    .paragraph{
+        font-size: 22px;
+        border-left: 4px solid rgb(34, 69, 151);
+        padding:5px 20px;
+    }
+    body{
+        background-color: black;
+        margin:0px;
+    }
+    .bigcontainer{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        height: 900px;
+        width:400px;
+        background-color: aliceblue;
+        padding: 17px;
+        margin: 0px;
+    }
+    .container2{
+        height:410px;
+        width:380px;
+        background-color:rgb(221, 230, 238);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .date1, .date2, .persons{
+        background-color: #f6f4f3;
+        padding-left: 12px;
+        padding-right: 12px;
+        position: relative;
+        box-sizing: border-box;
+        height:98px;
+        display: flex;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #156bc1;
+        text-align: left;
+        white-space: nowrap;
+        align-items: center;
+}
+.checkin, .checkout, .number{
+    margin-left: 180px;
+}
+.adult{
+    margin-left: 130px;
+}
+.search1{
+    display: flex;
+    justify-content: center;
+}
+.search{
+    background-color: rgb(30, 70, 130);
+    height: 55px;
+    width: 335px;
+    font-size: 23px;
+    color: #f6f4f3;
+    border-radius: 10px;
+}
+.nav3{
+    padding-top: 7px;
+}
+.nav4{
+    display:flex;
+    justify-content: space-between;
+}
+.navbar1, .navbar3{
+    width: 40px;
+    height: 6px;
+    background-color:rgb(41, 74, 124);
+    margin: 6px 0;  
+  /* display:inline-block; */
+}
+.navbar2{
+    width: 40px;
+    height: 6px;
+    background-color:rgb(41, 74, 124);
+    margin: 6px 0;  
+    margin-left: 5px;
+}
+</style>
+<body>
+    <div class="bigcontainer">
+        <div class="container">
+        <div class="nav4">
+            <div>
+                <div class="z">
+                    Z
+                </div>
+                <div class="zetgo">
+                   Zetgo 
+                </div>
+            </div>   
+            <div class="nav3">
+                <div>
+                    <div class="navbar1"></div>
+                </div>
+                <div>
+                    <div class="navbar2"></div>
+                </div>
+                <div>
+                    <div class="navbar3"></div>
+                </div>
+            </div>    
+        </div>
+            <div>
+                <p class="zet">Zetgo ---  amazing hostel for the free spirited traveler</p>
+                <p class="paragraph">Egestas pretium aenean pharetra magna ac. Et tortor consequat id porta nibh venenatis cras sed.Vel turpis nunc eget lorem dolor sed</p>
+            </div>
+            <div class="container2">
+                <div>
+                    <button class="date1">
+                        <span>Check-In </span>
+                    <input type="date" name="checkin" class="checkin">
+                    </button>
+                </div>
+                <br>
+                <div>
+                    <button class="date2">
+                        <span>Check-Out</span> <br>
+                    <input type="date" name="checkout" class="checkout">
+                    </button>
+                </div>
+                <br>
+                <div>
+                    <button class="persons">
+                        <span class="xyz"></span>
+                        <span class="abc">Guests</span>
+                        <div class="adult">
+                            <label for="Guest">Adult</label>
+                            <select  id="Guest">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <label for="Guest">Children</label>
+                            <select  id="Guest">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </button><br>
+                </div>
+                <div class="search1">
+                    <button class="search">Search</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
